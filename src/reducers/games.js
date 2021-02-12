@@ -1,23 +1,23 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-
-
 export const games = createSlice({
     name: 'games',
     initialState: {
+        username: null,
         game: { 
             directions: 'THIS IS WHERE THE GAME STARTS', 
-            question: 'what color i sthe sky?', 
-            hint: 'not red', 
-            answer: 'blue', }
+            question: '', 
+            hint: '', 
+            answer: '', }
     },
 
     reducers: {
         generateGame: (state, action) => {
             state.game = action.payload
         },
-        
-
+        setUsername : (state, action) => {
+            state.username = action.payload
+        },
     }
 })
 

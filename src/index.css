@@ -12,7 +12,7 @@ body {
 
 body {
   margin: 64px 24px 24px 24px;
-  background-color: #323442;
+  background-color: wheat;
   color: white;
 }
 
@@ -30,7 +30,7 @@ main {
 .game-wrapper {
   display: flex;
   flex-direction: column;
-  border: 3px dotted black;
+  border: 5px dotted white;
   padding: 10px;
 }
 

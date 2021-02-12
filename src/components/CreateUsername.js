@@ -7,9 +7,9 @@ export const CreateUsername = () => {
     const dispatch = useDispatch();
     const [username, setUsername] = useState ("")
 
-    const dispatchUsername = () => {
-      dispatch(
-        games.actions.setUsername(username)
+    const dispatchUsername = (event) => {
+      event.preventDefault()
+      dispatch(games.actions.setUsername(username)
       )
     }
 
