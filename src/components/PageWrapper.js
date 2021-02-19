@@ -10,7 +10,7 @@ export const PageWrapper = () => {
 
   return (
     <div className="game-container">
-      {/* If the username hasn't been set, show "CreateUsername" component */}
+      {/* If the username hasn't been set, show "CreateUsername"  */}
       {
         username === "" &&
         <CreateUsername />

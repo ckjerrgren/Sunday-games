@@ -13,15 +13,15 @@ export const generateNewGame = () => {
     }
 }
 
-// DONT FORGET TO ADD THE FETCH To HEROKU 
-export const generateNewHint = () => {
-return (dispatch) => {
-    fetch('')
-            .then(res => res.json())
-            .then(data => {
-                console.log(data)
-                dispatch(games.actions.generateHint(data))
-                // Where do i put hint? and do i need ID ? 
-            })
-}
-}
+// // DONT FORGET TO ADD THE FETCH To HEROKU 
+// export const generateNewHint = () => {
+// return (dispatch) => {
+//     fetch('')
+//             .then(res => res.json())
+//             .then(data => {
+//                 console.log(data)
+//                 dispatch(games.actions.generateHint(data))
+//                 // Where do i put hint? and do i need ID ? 
+//             })
+// }
+// }

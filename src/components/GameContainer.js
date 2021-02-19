@@ -6,15 +6,15 @@ export const GameContainer = () => {
 
     return (
         <div className="game-wrapper"> 
-            <div>{game.directions}</div>
-            <div>{game.question}</div>
-            <div>{game.hint}</div>
+            <div className="game-info">{game.directions}</div>
+            <div className="game-info">{game.question}</div>
+            <div className="game-info">{game.hint}</div>
             
             <div className="answer-box">
             <input 
               type="text" 
               placeholder="Answer?"
-            //   value={username} 
+               value={game.answer} 
             //   onChange={event => setAnswer(event.target.value)}
             />
 

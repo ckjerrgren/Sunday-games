@@ -28,6 +28,6 @@ export const GameControls = () => {
 }
 
 // On click handler generates new directions. 
-// How do I make It random? 
+// Can be pressed 10 times and then the game is over? 
 
 // Button should be disabled until correct answer has been added. 

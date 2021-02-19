@@ -7,9 +7,11 @@ export const CreateUsername = () => {
     const dispatch = useDispatch();
     const [username, setUsername] = useState ("")
 
-    const dispatchUsername = (event) => {
-      event.preventDefault()
-      dispatch(games.actions.setUsername(username)
+    const dispatchUsername = () => {
+      dispatch(
+        games.actions.setUsername(username),
+        console.log(username)
+        //Username works! yay 
       )
     }
 
@@ -17,7 +19,7 @@ export const CreateUsername = () => {
       <div className="box-username">
             <input 
               type="text" 
-              placeholder="What's your name?"
+              placeholder="Choose your alias!"
               value={username} 
               onChange={event => setUsername(event.target.value)}
             />
@@ -30,3 +32,4 @@ export const CreateUsername = () => {
         </div>
     )
 }
+

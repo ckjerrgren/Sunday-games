@@ -1,19 +1,23 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+const initialState = {
+    username: "",
+    game: {
+        directions: 'THIS IS WHERE THE GAME STARTS', 
+        question: '', 
+        hint: '', 
+        answer: '', 
+    }
+}
+
 export const games = createSlice({
     name: 'games',
-    initialState: {
-        username: null,
-        game: { 
-            directions: 'THIS IS WHERE THE GAME STARTS', 
-            question: '', 
-            hint: '', 
-            answer: '', }
-    },
+    initialState,
 
     reducers: {
         generateGame: (state, action) => {
-            state.game = action.payload
+            const currentGameState = action.payload
+            state.game = currentGameState
         },
         setUsername : (state, action) => {
             state.username = action.payload
